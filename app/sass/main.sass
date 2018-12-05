@@ -41,7 +41,16 @@ body
 			&:nth-child(2)
 				width: calc(35% - 20px)
 			&:nth-child(3)
+				color: #fff
 				width: 50%
+				.contacts
+					margin-top: 20px
+					margin-right: 20px
+					display: flex
+					align-items: flex-end
+					flex-direction: column
+					a
+						color: #fff
 	&__content
 		margin-top: 20px
 		margin-bottom: 20px
@@ -61,6 +70,14 @@ body
 				padding: 10px
 				width: 100%
 				background: $accent
+				p
+					color: #fff
+				ul
+					padding: 0
+					margin: 0
+					li
+						list-style: none
+						color: #fff
 				&:nth-child(2)
 					min-height: 120px
 		.content__body
@@ -71,17 +88,18 @@ body
 				flex-wrap: wrap
 				margin-right: 30px
 				&:nth-child(1)
-					width: 97%
+					width: 97.5%
 					margin-left: 20px
 					min-height: 200px
 					background: $light
+					color: #787878
 				&:nth-child(2)
 					.small__item
 						display: flex
 						flex-wrap: wrap
 						margin-top: 20px
 						margin-left: 20px
-						width:  calc(20% - 20px)
+						width: calc(20% - 20px)
 						min-height: 150px
 						background-color: $light
 				&:nth-child(3)
@@ -91,6 +109,10 @@ body
 					flex-wrap: wrap
 					margin-left: 20px
 					width: 97%
+					color: #787878
+					p
+						padding: 0 20px
+
 					.item__medium
 						min-height: 200px
 						width: 48.5%
@@ -107,15 +129,34 @@ body
 				min-width: 47%
 				min-height: 180px
 				background-color: $accent
+				display: block
+				color: #fff
+				&:nth-child(1)
+					ul
+						margin: 0
+						padding: 20px
+						li
+							list-style: none
+							float: left
+							padding: 0 90px 0 0
+							&:nth-child(2n+1)
+								clear: both
+
+				&:nth-child(2)
+					ul
+						margin: 0
+						padding: 20px
+						li
+							list-style: none
+
 		.footer__right
 			display: flex
 			width: 330px
 			flex-direction: column
 			align-items: center
+			justify-content: space-between
 			.footer__item
 				width: 100%
-				min-height: 80px
+				min-height: 85px
 				background-color: $accent
-				&:nth-child(1)
-					margin-bottom: 20px
 @import "_media"
