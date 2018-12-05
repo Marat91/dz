@@ -70,6 +70,7 @@ body
 				padding: 10px
 				width: 100%
 				background: $accent
+				min-height: 120px
 				p
 					color: #fff
 				ul
@@ -78,18 +79,19 @@ body
 					li
 						list-style: none
 						color: #fff
-				&:nth-child(2)
-					min-height: 120px
 		.content__body
 			width: calc(100% - 220px)
+			display: flex
+			flex-flow: row wrap
+			justify-content: flex-end
 			.body__item
 				width: 100%
 				display: flex
 				flex-wrap: wrap
-				margin-right: 30px
 				&:nth-child(1)
-					width: 97.5%
 					margin-left: 20px
+					padding: 0 20px
+					width: 100%
 					min-height: 200px
 					background: $light
 					color: #787878
@@ -97,22 +99,21 @@ body
 					.small__item
 						display: flex
 						flex-wrap: wrap
-						margin-top: 20px
 						margin-left: 20px
+						margin-top: 20px
 						width: calc(20% - 20px)
 						min-height: 150px
 						background-color: $light
 				&:nth-child(3)
 					margin-top: 20px
+					margin-left: 20px
 					justify-content: space-between
 					display: flex
 					flex-wrap: wrap
-					margin-left: 20px
-					width: 97%
+					width: 100%
 					color: #787878
 					p
 						padding: 0 20px
-
 					.item__medium
 						min-height: 200px
 						width: 48.5%
