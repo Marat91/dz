@@ -43,7 +43,7 @@ body
 			&:nth-child(3)
 				color: #fff
 				width: 50%
-				.contacts
+				.item__contacts
 					margin-top: 20px
 					margin-right: 20px
 					display: flex
@@ -79,6 +79,9 @@ body
 					li
 						list-style: none
 						color: #fff
+						a
+							color: #fff
+							text-decoration: none
 		.content__body
 			width: calc(100% - 220px)
 			display: flex
@@ -128,21 +131,21 @@ body
 			.footer__item
 				margin-right: 20px
 				min-width: 47%
-				min-height: 180px
+				height: 200px
 				background-color: $accent
 				display: block
 				color: #fff
 				&:nth-child(1)
+					display: flex
 					ul
+						width: 100%
 						margin: 0
 						padding: 20px
+						display: flex
+						flex-direction: column
+						flex-wrap: wrap
 						li
 							list-style: none
-							float: left
-							padding: 0 90px 0 0
-							&:nth-child(2n+1)
-								clear: both
-
 				&:nth-child(2)
 					ul
 						margin: 0
